@@ -1,0 +1,3 @@
+[submodule "mm-mushclient-scripts"]
+	path = mm-mushclient-scripts
+	url = https://github.com/mu3r73/mm-mushclient-scripts.git
