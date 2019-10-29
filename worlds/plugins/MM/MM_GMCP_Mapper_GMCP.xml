@@ -3952,7 +3952,10 @@ function room_update_name(uid, name)
       fixsql(uid)
   )))
 
-  if (config2.show_database_mods) then
+  if config2.show_database_mods and
+     (tonumber (uid) > -1 or 
+      tonumber (uid) < -99 or
+      tonumber (uid) == nil) then
     mapper.mapprint("Room", uid, "name updated")
   end
 
